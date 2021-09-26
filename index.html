@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AE1 - DCOTS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://img.icons8.com/external-wanicon-lineal-color-wanicon/64/000000/external-banner-independence-day-wanicon-lineal-color-wanicon.png">
+</head>
+<body>
+    <!-- Para el 30 de septiembre    -->
+    <h1>AEA0 - DCOTS</h1>
+    <main>
+        <section>
+            <div>
+                <div class="question"><h2>1.</h2><h2>Que es Vanilla Javascript</h2></div>
+                <p>JavaScript Vanilla es cuando usas JavaScript sin ninguna librería / framework</p>
+            </div>
+            <div>
+                <div class="question"><h2>2.</h2><h2>Diferència els ECMA Script que pertanyen a JavaScript Modern</h2></div>
+                <p>características implementadas en <b>ECMAScript 6</b>
+                    <ul>
+                        <li type="square">arrows</li>
+                        <li type="square">classes</li>
+                        <li type="square">enhanced object literals</li>
+                        <li type="square">template strings</li>
+                        <li type="square">destructuring</li>
+                        <li type="square">default + rest + spread</li>
+                        <li type="square">let + const</li>
+                        <div class="ecma">
+                            <li type="square">iterators + for..of</li>
+                            <li type="square">generators</li>
+                            <li type="square">unicode</li>
+                            <li type="square">modules</li>
+                            <li type="square">module loaders</li>
+                            <li type="square">map + set + weakmap + weakset</li>
+                            <li type="square">proxies</li>
+                            <li type="square">symbols</li>
+                            <li type="square">subclassable built-ins</li>
+                            <li type="square">promises</li>
+                            <li type="square">math + number + string + array + object APIs</li>
+                            <li type="square">binary and octal literals</li>
+                            <li type="square">reflect api</li>
+                            <li type="square">tail calls</li>
+                        </div>
+                    </ul>
+                    <b><span style="cursor: pointer;" id="ecma" onclick="featuresECMA6()">Mostrar más</span></b>
+                </p>
+            </div>
+            <div>
+                <div class="question"><h2>3.</h2><h2>Qui va crear JavaScript? De quina empresa era?</h2></div>
+                <p>JavaScript fue creado por <b>Brendan Eich</b>, este trabajaba en <b>Netscape Communications Corporation</b>, cuando creo JavaScript</p>
+            </div>
+            <div>
+                <div class="question"><h2>4.</h2><h2>Quina empresa hi ha actualment darrera de JavaScript?</h2></div>
+                <p>JavaScript se encuentra oficialmente bajo la organización de <b>Mozilla Foundation</b>, esta es una organización sin ánimo de lucro dedicada a la creación de software libre.</p>
+            </div>
+            <div>
+                <div class="question"><h2>5.</h2><h2>Què és una arrow function? A quin ES apareix (Quin any)</h2></div>
+                <p>Una arrow function es una alternatica compacta a una expresión de función tradicional, pero uno de sus defectos es que es limitado y sno se puede utilizar en todas las situaciónes, esta aparecio en ES5. Diferencias y limitaciones:</p>
+                <ul>
+                    <li type="square">Función arrow</li>
+                    <li type="square">Template Strings</li>
+                    <li type="square">Let y Const</li>
+                    <li type="square">Generadores</li>
+                    <li type="square">Literales octales y binarias</li>
+                    <li type="square">Maps y Sets</li>
+                    <li type="square">Promesas</li>
+                </ul>
+                <p>Ejemplo de una <b>arrow function</b>:</p>
+<pre>
+let ejemploFuncion = () => {
+    <span>/* código de la función */</span>
+}
+</pre>
+            </div>
+            <div>
+                <div class="question"><h2>6.</h2><h2>Què és un callback? Posa un exemple</h2></div>
+                <p>Un <b>callback</b> es una función que recibe como argumento otra función y la ejecuta. Ejemplo:</p>
+                <pre><b>function</b> ejemplo(callback) { 
+    callback();
+    }</pre>
+            </div>
+            <div>
+                <div class="question"><h2>7.</h2><h2>Què és una promesa en JavaScript (promise). Posa un exemple. Explica també la diferencia entre la programació sincrona y la programació asincrona, posa un exemple</h2></div>
+                <p>Una <b>promise</b> sirve para resolver problemas de asincronía, se crea con el propósito de ejecutar un código que en principio funciona y si cuando se ejecuta funciona podremos ejecutar una función/código en el caso de que funcione o falle. Ejemplo </p>
+<pre>
+<b>fetch</b>("/ejemplo.txt")
+    .then(function(response) {
+        <span>/* Código a realizar cuando se cumpla la promesa */</span>
+        return response.text();
+    })
+    .catch(function(error) {
+        <span>/* Código a realizar cuando se rechaza la promesa */</span>
+        console.log(data);
+    });
+</pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2021 All Rights Reserved by - David Cots</p>
+    </footer>
+<script>
+    const li = document.querySelector('.ecma');
+    const span = document.getElementById('ecma');
+    let featuresECMA6 = () => {
+        if(li.style.display == 'none' || li.style.display == ''){
+            li.style.display = "block";
+            span.textContent = 'Mostrar menos';
+        }else{
+            li.style.display = "none";
+            span.textContent = 'Mostrar más';
+        }
+    }
+</script>
+</body>
+</html>
