@@ -6,8 +6,10 @@
     font-family: 'Montserrat',sans-serif;
 }
 
-html, body{
+body{
     background: #dae0e6;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 h1{
@@ -72,6 +74,9 @@ footer{
     text-align: center;
     color: white;
     padding: 5px 0 ;
+    position: relative;
+    bottom: 0;
+
 }
 
 pre{
